@@ -1,0 +1,7 @@
+#header, .module caption, #changelist-filter h2 {
+    background: blue;
+}
+
+div.breadcrumbs {
+        background: red;
+}

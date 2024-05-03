@@ -1,0 +1,7 @@
+{% for cl in clubs %}
+{% if cl.id == club_selected %}
+<li class="selected">{{ cl.name }}</li>
+{% else %}
+<li><a href="{{ cl.get_absolute_url }}">{{ cl.name }}</a></li>
+{% endif %}
+{% endfor %}

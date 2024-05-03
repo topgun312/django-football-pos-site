@@ -1,0 +1,7 @@
+{% for pos in positions %}
+{% if pos.id == position_selected %}
+<li class="selected">{{ pos.name }}</li>
+{% else %}
+<li><a href="{{ pos.get_absolute_url }}">{{ pos.name }}</a></li>
+{% endif %}
+{% endfor %}
