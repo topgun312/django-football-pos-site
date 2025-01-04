@@ -27,6 +27,7 @@ urlpatterns = [
     path("", include("players.urls")),
     path("users/", include("users.urls", namespace="users")),
     path("__debug__/", include("debug_toolbar.urls")),
+    path("metrics/", include("django_prometheus.urls"))
 ]
 
 if settings.DEBUG:
